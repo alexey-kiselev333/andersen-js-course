@@ -17,4 +17,5 @@
 //   { name: 'React', isActive: true, members: 500 },
 // ];
 
-// function membersOnActiveMeetups(meetups) {}
+export const membersOnActiveMeetups = meetups =>
+  meetups.filter(el => el.isActive).reduce((acc, curr) => acc + curr.members, 0);

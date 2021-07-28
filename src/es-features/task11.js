@@ -1,4 +1,4 @@
-﻿﻿/**
+﻿/*
  * Функция принимает объект и ключ-строку.
  * Если в объекте по ключу будет значение null или undefined, то нужно вернуть false.
  * Если какое-либо другое значение, то нужно вернуть это значение.
@@ -18,5 +18,6 @@ export function task11Old(obj, fieldName) {
 // Напишите реализацию функции task11Old на ESnext ниже этого комментария.
 // При желании, можете использовать стрелочную функцию, вместо обычной
 
-export function task11New() {
+export function task11New(object, fieldName) {
+  return object[fieldName] ?? false;
 }
