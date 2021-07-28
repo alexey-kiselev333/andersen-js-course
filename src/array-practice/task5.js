@@ -15,8 +15,8 @@
  * generator.next(); -> 'Complete!'
  * generator.next(); -> 'Complete!'
  */
-// eslint-disable-next-line import/prefer-default-export
-export function createGenerator(array) {
+
+export const createGenerator = array => {
   let current = 0;
   const generator = {
     next() {
@@ -24,4 +24,4 @@ export function createGenerator(array) {
     },
   };
   return generator;
-}
+};
